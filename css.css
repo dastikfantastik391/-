@@ -1,0 +1,654 @@
+/* body */
+body {
+  min-height: 100vh;
+  flex-direction: column;
+   height: 5000px ;
+   margin: auto ;
+}
+* {
+  background-color: #242423;
+}
+.hr3 {
+  margin-top: 900px;
+}
+
+/* header  */
+.logo {
+    height: auto;
+    width: auto;
+    display: block;
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.logo-text  {
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        position: relative;
+        bottom: -2px; 
+        font-size: 20px;
+        color: white;
+}
+
+h3.logo-text  {
+  font-size: 25px;
+}
+
+a.navigation {
+  font-size: 20px;
+  color: white;
+}
+
+.navigation {
+    color:black;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;      
+  justify-content: space-between;
+  height: 60px; 
+}
+
+.nav {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.nav a {
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+    text-decoration: none;
+    position: relative;
+    top: -1px;
+}
+
+.menu img {
+  opacity: 0.7;
+  filter: brightness(0.8);
+   background: rgba( green, blue, 0.8); 
+}
+
+.menu {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+    top: 10px;
+}
+
+/* section main */
+
+h1.main-zag {
+font-size: 50px;
+}
+
+p.main-text {
+  font-size: 20px;
+}
+
+.img {
+    position: relative;
+    display: inline-block;
+}
+
+.main {
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+    z-index: -1; 
+    margin-top: px;
+}   
+
+.main-zag {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    top: 1px;
+    position: absolute;
+    
+  }
+
+  .main-text {
+  color: rgb(255, 255, 255);
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  margin-left: 1100px;
+  font-size: 17px;
+  margin-bottom: 200px;
+  top: 345px;
+  bottom: 100px;
+  position: absolute;
+}
+
+.main-zag {
+    padding-top: 250px;
+    margin-left: 1100px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 40px;
+    color:#ffffff ; 
+    text-shadow: 
+      0 0 5px #dddddd, 
+      0 0 10px #ffffff,
+      0 0 20px #f8f8f8, 
+      2px 2px 0 #ffffff; 
+    background: linear-gradient(
+      to right,
+      #ffffff 20%, 
+      #ffffff 50%, 
+      #ffffff 80%
+    );
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: shine 3s infinite;
+    
+  }
+  
+  @keyframes shine {
+    0% { background-position: -500px; }
+    100% { background-position: 500px; }
+  }
+
+  hr {
+    margin-top: 25px ;
+  }
+
+  /* button */
+  .btn {
+    font-family: 'Metal Lord', fantasy;
+    text-shadow: 0 0 5px #ffffff;
+    margin-left: 1100px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    cursor: pointer;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-top: -660px; 
+    display: block;
+    position: relative; 
+    z-index: 10;
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  .btn::after {
+    background-color: #fff;
+  }
+
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+
+/* cards */
+
+.cards {
+ margin-top: 100px;
+ position: absolute;
+ align-items: center;
+ display: flex;
+ gap: 70px;
+ padding-left: 690px;
+ justify-content: center;
+}
+
+/* iron man */
+/* осн стили */
+
+.marvel-character-card {
+  background: rgba(10, 10, 10, 0.952);
+  border-radius: 10px;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.marvel-character-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.5);
+}
+
+/* изобр персонажа */
+
+.marvel-character-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 8px solid #ff0000;
+  transition: transform 0.5s;
+}
+
+.marvel-character-card:hover .marvel-character-image {
+  transform: scale(1.05);
+}
+
+/* инфо блок */
+
+.marvel-character-info {
+  padding: 60px;
+  position: relative;
+}
+
+.marvel-character-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+/* текст инфо */
+
+.marvel-hero-name {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.marvel-real-name {
+  color: #81817e;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+}
+
+/* james rhodes */
+/* осн стили */
+
+.character-card {
+  background: rgba(10, 10, 10, 0.952);
+  border-radius: 10px;
+  width: 280px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.5);
+}
+
+.character-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  background: rgba(10, 10, 10, 0.952);
+}
+
+/* изобр персонажа */
+
+.character-card-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 8px solid #ff0000;
+  transition: transform 0.5s;
+}
+
+.character-card:hover .character-card-image {
+  transform: scale(1.05);
+}
+
+/* инфо блок */
+
+.character-card-info {
+  padding: 42px;
+  position: relative;
+}
+
+.character-cardr-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+/* текст инфо */
+.hero-name {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.real-name {
+  color: #81817e;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+}
+
+/* black widow */
+
+@keyframes bgChange {
+  0% { background-color: #ffffff; }
+  50% { background-color: #ffffff; }
+  100% { background-color: #ffffff; }
+}
+
+/* Общие стили карточек */
+
+.character-card {
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.5);
+  background: rgba(30, 30, 30, 0.8);
+  border-radius: 10px;
+  width: 280px;
+  overflow: hidden;
+  background: rgba(10, 10, 10, 0.952);
+  transition: all 0.3s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-10px);
+  background: rgba(10, 10, 10, 0.952);
+}
+
+/* Стили для Черной Вдовы */
+
+.black-widow-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 8px solid #fd0000;
+}
+
+.black-widow-info {
+  padding: 30px;
+  position: relative;
+}
+
+.black-widow-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+.black-widow-title {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.black-widow-name {
+  color:  #81817e;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.black-widow-nickname {
+  color: #00F7FF;
+  font-style: italic;
+  font-size: 1.1rem;
+  display: inline-block;
+  background: rgba(10, 10, 10, 0.952);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+/* gallery */
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+
+.gallery {
+    padding: 80px 0;
+    background: #0f0f0f;
+  }
+
+  .gallery h2 {
+    text-align: center;
+    margin-bottom: 42px;
+    font-size: 2.8rem;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color:#ffffff ; 
+    text-shadow: 
+      0 0 5px #dddddd, 
+      0 0 10px #ffffff,
+      0 0 20px #f8f8f8, 
+      2px 2px 0 #ffffff; 
+    background: linear-gradient(
+      to right,
+      #ffffff 20%, 
+      #ffffff 50%, 
+      #ffffff 80%
+    );
+    -webkit-background-clip: text; 
+  }
+  
+
+  .slider {
+    box-shadow: 0 0 15px rgba(151, 146, 120, 0.2);
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .slide {
+    display: none;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .slide img {
+    width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    padding: 18px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 20%;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+ 
+  .slider {
+    box-shadow: 0 0 15px rgba(151, 146, 120, 0.2);
+    position: relative;
+    max-width: 800px;
+    height: 450px; 
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; 
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; 
+}
+
+/* Footer */
+
+.footer-img {
+  margin-left: 120px;
+  height:300x;
+  width: 130px;
+}
+
+.footer-img2 {
+  height: 72px;
+  width: 72px;
+}
+
+.marvel-footer {
+  
+  color: #ffffff;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer-column {
+  display: grid;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  position: absolute;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.footer-link {
+  font-size: 20px;
+  font-weight: 1000;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: gray;
+}
+
+.highlight-box {
+  max-width: 1200px;
+  text-align: center;
+  color: gray;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  padding: 0 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer--links {
+  display: inline-block;
+  margin: 0 5px;
+   color: #666;
+   text-decoration: none;
+}
+
+.footer--links:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 5px;
+}
+
+.footer-column2 {
+  padding: 15px 0;
+  margin-top: auto;
+}
+/* !!!!MORRISON ACADEMY ЛУЧШИЕЕЕ!!!! */
